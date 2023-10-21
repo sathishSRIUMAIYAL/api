@@ -16,13 +16,12 @@ fetch('https://jsonplaceholder.typicode.com/comments')
    let n=10
    let data1=''
    compl.slice(0,10).map((vale)=>{
-    data1+=`<div style="margin-top:15% padding:3%">
-    <div class="card-body">
-      <h4 class=" text-info">Id=${vale.id}</h4>
-      <h4 class="text-white">Name=${vale.name}</h4>
-      <p class="text-white">Email=${vale.email}</p>
-      <p class="text-white">${vale.body}</p>
-      
+    data1+=`
+    <div style='border:solid 2px white'>
+      <h4 class=" text-info p-2">Id=${vale.id}</h4>
+      <h4 class="text-white p-2">Name=${vale.name}</h4>
+      <p class="text-white p-2">Email=${vale.email}</p>
+      <p class="text-white p-2">${vale.body}</p>
   </div>`
    })
    document.getElementById('outt').innerHTML=data1
@@ -135,9 +134,60 @@ function setsuccess (element,message){
 
 
 
+form.addEventListener('submit',(e)=>{
+    
+    if(!validateInputs()){
+        e.preventDefault();
+    };
+})
+
+function validateInputs(){
+    const usernameVAl=username.value.trim()
+    const passwordVAl=password.value.trim()
+    let success = true
+    
+
+    if (usernameVAl===''){
+        success=false
+        seterror(username,'username is required')
+    }
+    else{
+        setsuccess(username)
+    }
+    
+
+    if (passwordVAl===''){
+        success=false
+        seterror(password,'password is required')
+    }
+    else if (passwordVAl.length<8){
+        success=false
+        seterror(password,'password must be atleast 8 characters')
+    }
+    else{
+        setsuccess(password)
+    }
+    return success;
+}
+
+function seterror(element,message){
+    const input=element.parentElement;
+    const error=input.querySelector('.error')
+
+    error.innerText = message
+    input.classList.add('error')
+    input.classList.remove('success')
+}
 
 
+function setsuccess (element,message){
+    const input=element.parentElement;
+    const error=input.querySelector('.error')
 
+    error.innerText = '';
+    input.classList.add('success')
+    input.classList.remove('error')
+}
 
 
 
