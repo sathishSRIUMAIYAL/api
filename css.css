@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: linear-gradient(red,blue);
+    
+}
+
+.text{
+    position:fixed;
+    bottom: 0;
+    background-color:black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+
+}
+.id{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    
+}
+input{
+    width:400px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    border-width: 2px;
+    margin-right: 10px;
+}
+input:focus{
+    outline: 0  ;
+}
+
+.card{
+    position: absolute;
+    top: 10vh;
+}
+
+#outt{
+    display: inline;
+}
+
+
+
+
+#two{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    width:60vw;
+    background-color: whitesmoke;
+    border-radius: 0px 50px 0px 50px;
+    box-shadow: 10px 10px 5px black;
+}
+#three>input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-style: none;
+    border-bottom-style: solid;
+    width:45vw;
+}
+#two>h1{
+    text-align: center;
+    color: blue;
+    text-decoration-line: underline;
+}
+input:focus{
+    outline: 0;
+}
+input[type=submit]{
+    background-color:tomato;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    width: 40vw;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+input[type=submit]:hover{
+    background-color:red;
+}
+a{
+    margin-left: 30px;
+    color:toma;
+}
+span{
+    font-size: 20px;
+}
+.error{
+    margin-left: 30px;
+    color: red;
+}
+#three.success input{
+    border-color:green;
+}
+#three.error input{
+    border-color:red;
+}
+
+body{
+    background-color: aliceblue;
+    background-image: linear-gradient(blue,red);
+    background-attachment: fixed;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-transform: uppercase;
+    color: blue;
+    text-align: center;
+}
+button{
+   background-color:red;
+   color: white;
+   border: 1px solid transparent;
+   padding:10px 30px;
+   margin: 20px 0;
+   width: 100%;
+   font-size: 30px;
+   cursor: pointer;
+   
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.user>input{
+    padding: 10px;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-size: 20px;
+    border-color:violet;
+    color: black;
+    width:300px;
+}
+.user input:focus{
+    outline: 0;
+}
+.error{
+    color:white;
+    font-size: 16px;
+
+}
+label{
+    color:white;
+    font-size: 25px;
+}
+.user.success input{
+    border-color: green;
+}
+.user.error input{
+    border-color: red;
+}
+
+.input #listitem{
+    font-size: 100px;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 10px;
+    list-style-type: none;
+    background:whitesmoke   ;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 80%;
+    text-align: center;
+   
+
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  ul li:hover {
+    background: #ddd;
+    display: block;
+  }
+  span{
+    
+    color:black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+   
+  }
+  span:hover{
+   color:red;
+
+  }
+  span{
+   position: absolute;
+   right: 11vw;
+    
+  }
+  #text{
+    border: none;
+    border-bottom: solid red;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .inputf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+  }
+  .close {
+    position:relative;
+    right: 0;
+    top: 0;
+  }
+  
+
+  
